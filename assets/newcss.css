@@ -284,14 +284,17 @@ img {
 }
 
 .home__blob {
-  width: 200px;
-  fill: var(--first-color);
+  width: 300px;
+  /* fill: var(--first-color); */
   /* fill: hsl(69, 69%, 61%); */
+  height: 300px;
 }
 .home__blob-img {
-  width: 180%;
-  height: 145%;
-  padding-left: 30px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  /* padding-left: 30px; */
 }
 .home__data {
   grid-column: 1/3;
@@ -432,14 +435,22 @@ img {
 /*===================== SKILLS =========================*/
 
 .skills__container {
-  row-gap: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* row-gap: 0; */
+}
+.skills__centered-content {
+  max-width: 1000px; /* Adjust as needed */
+  width: 100%;
 }
 
 .skills__header {
-  display: flex;
+    display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+  gap: 1rem;
+  text-align: center;
 }
 
 .skills__icon,
